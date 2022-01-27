@@ -1,0 +1,142 @@
+html, body, .App, #root, .main {
+  width: 100vw;
+  width: fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: 100vh;
+  height: fill-available;
+  height: -moz-available;
+  height: stretch;
+  margin: 0;
+  padding: 0;
+  font-family: Josefin Sans, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+  width: 100%;
+  width: fill-available;
+  width: stretch;
+  height: 100px;
+  background: #afafaf;
+  position: fixed;
+  top: 0;
+}
+
+.grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2em 2em;
+  padding: 2em;
+}
+
+.project-card-wrapper {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  height: 100%;
+  max-width: 350px;
+}
+
+.project-card {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  background: #efefef;
+  height: fill-available;
+}
+.project-card .image-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.project-card .image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1599px) {
+  .project-card-wrapper {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 1200px) {
+  .project-card-wrapper {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 800px) {
+  .project-card-wrapper {
+    grid-column: span 12;
+  }
+}
+.loading {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  width: fill-available;
+  height: fill-available;
+  width: stretch;
+  height: stretch;
+}
+
+.project-card-wrapper {
+  opacity: 0;
+}
+
+.project-card {
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.expanded-height {
+  animation: expand 0.5s forwards;
+  max-height: calc(700px + 2em);
+}
+
+.reduce {
+  animation: reduce 0.5s forwards;
+}
+
+.expanded {
+  grid-row: span 2;
+}
+
+.appear {
+  animation: appear 0.5s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes expand {
+  0% {
+    min-height: 350px;
+    max-height: 350px;
+  }
+  100% {
+    min-height: calc(700px + 2em);
+    max-height: calc(700px + 2em);
+  }
+}
+@keyframes reduce {
+  0% {
+    min-height: calc(700px + 2em);
+    max-height: calc(700px + 2em);
+  }
+  100% {
+    min-height: 350px;
+    max-height: 350px;
+  }
+}
+
+/*# sourceMappingURL=_app.css.map */

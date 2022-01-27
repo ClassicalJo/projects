@@ -1,0 +1,67 @@
+@use './_base' as base
+
+html, body, .App, #root, .main
+    width: 100vw
+    width: fill-available
+    width: -moz-available
+    width: stretch
+    height: 100vh
+    height: fill-available
+    height: -moz-available
+    height: stretch
+    margin: 0
+    padding: 0
+    font-family: Josefin Sans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    -webkit-tap-highlight-color: transparent
+
+.header
+    width: 100%
+    width: fill-available
+    width: stretch
+    height: 100px
+    background: base.$color3
+    position: fixed
+    top: 0
+
+.grid
+    margin-top: 100px
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: base.$gridGap base.$gridGap
+    padding: base.$gridGap
+    
+
+.project-card-wrapper
+    grid-column: span 3
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-self: center
+    height: 100%
+    max-width: 350px
+
+.project-card
+    @include base.mediumBoxShadow
+    border-radius: 25px
+    background: base.$color1
+    height: fill-available
+    
+    .image-wrapper
+        @include base.centerDiv
+        
+        > img
+            width: 100%
+            height: auto
+            
+
+@media (max-width:1599px)
+    .project-card-wrapper
+        grid-column: span 4
+
+@media (max-width:1200px)
+    .project-card-wrapper
+        grid-column: span 6
+
+@media (max-width:800px)
+    .project-card-wrapper
+        grid-column: span 12
