@@ -9,22 +9,19 @@
     width: stretch
     height: stretch
 
-.project-card-wrapper
-    opacity: 0
 
 .project-card
-    max-height: base.$imageSize
     overflow: hidden
+    opacity: 0
 
-.expanded-height
-    animation: expand 0.5s forwards
-    max-height: base.$doubleImageSize
-
-.reduce
-    animation: reduce 0.5s forwards
-
-.expanded
+.grid > .expanded
     grid-row: span 2
+    animation: expand 0.5s forwards
+
+.grid > .reduced    
+    animation: reduce 0.5s forwards
+    grid-row: span 2
+    
 
 .appear
     animation: appear 0.5s forwards
@@ -35,18 +32,19 @@
     100%
         opacity: 1
 
+
 @keyframes expand
     0%
-        min-height: base.$imageSize
-        max-height: base.$imageSize
+        height: min(calc(100vw - base.$gridGap *2), 350px)
+    
     100%
-        min-height: base.$doubleImageSize
-        max-height: base.$doubleImageSize
+        height: base.$doubleImageSize
+        
 
 @keyframes reduce
     0%
-        min-height: base.$doubleImageSize
-        max-height: base.$doubleImageSize
+        height: base.$doubleImageSize
+        
     100%
-        min-height: base.$imageSize
-        max-height: base.$imageSize
+        height: min(calc(100vw - base.$gridGap *2), 350px)
+        

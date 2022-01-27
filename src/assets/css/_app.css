@@ -27,6 +27,7 @@ html, body, .App, #root, .main {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
   gap: 2em 2em;
   padding: 2em;
 }
@@ -37,8 +38,8 @@ html, body, .App, #root, .main {
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  height: 100%;
-  max-width: 350px;
+  width: min(100vw - 4em, 350px);
+  height: min(100vw - 4em, 350px);
 }
 
 .project-card {
@@ -72,6 +73,11 @@ html, body, .App, #root, .main {
     grid-column: span 12;
   }
 }
+@media (max-width: 414px) {
+  .project-card-wrapper {
+    justify-self: flex-start;
+  }
+}
 .loading {
   align-items: center;
   justify-content: center;
@@ -84,25 +90,18 @@ html, body, .App, #root, .main {
   height: stretch;
 }
 
-.project-card-wrapper {
+.project-card {
+  overflow: hidden;
   opacity: 0;
 }
 
-.project-card {
-  max-height: 350px;
-  overflow: hidden;
-}
-
-.expanded-height {
+.grid > .expanded {
+  grid-row: span 2;
   animation: expand 0.5s forwards;
-  max-height: calc(700px + 2em);
 }
 
-.reduce {
+.grid > .reduced {
   animation: reduce 0.5s forwards;
-}
-
-.expanded {
   grid-row: span 2;
 }
 
@@ -120,22 +119,18 @@ html, body, .App, #root, .main {
 }
 @keyframes expand {
   0% {
-    min-height: 350px;
-    max-height: 350px;
+    height: min(100vw - 4em, 350px);
   }
   100% {
-    min-height: calc(700px + 2em);
-    max-height: calc(700px + 2em);
+    height: calc(700px + 2em);
   }
 }
 @keyframes reduce {
   0% {
-    min-height: calc(700px + 2em);
-    max-height: calc(700px + 2em);
+    height: calc(700px + 2em);
   }
   100% {
-    min-height: 350px;
-    max-height: 350px;
+    height: min(100vw - 4em, 350px);
   }
 }
 
