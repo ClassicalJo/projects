@@ -15,6 +15,9 @@ html, body, .App, #root, .main
     font-family: Josefin Sans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     -webkit-tap-highlight-color: transparent
 
+p
+    margin: 0
+
 .header
     width: 100%
     width: fill-available
@@ -24,6 +27,13 @@ html, body, .App, #root, .main
     position: fixed
     top: 0
 
+.background
+    width: 100vw
+    object-fit: cover
+    position: fixed
+    canvas
+        height: 100%
+
 .grid
     margin-top: 100px
     display: grid
@@ -31,6 +41,7 @@ html, body, .App, #root, .main
     grid-auto-rows: 350px
     gap: base.$gridGap base.$gridGap
     padding: base.$gridGap
+    grid-auto-flow: dense
 
 .project-card-wrapper
     grid-column: span 3
@@ -42,11 +53,15 @@ html, body, .App, #root, .main
     height: min(calc(100vw - base.$gridGap *2), 350px)
 
 .project-card
-    @include base.mediumBoxShadow
-    border-radius: 25px
-    background: base.$color1
     height: fill-available
-
+    .action-zone
+        display: flex
+        justify-content: space-between
+        flex-direction: row-reverse
+        img
+            width: 50px
+            height: 50px
+            opacity: 0.8
     .image-wrapper
         @include base.centerDiv
         > img

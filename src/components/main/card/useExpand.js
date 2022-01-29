@@ -12,7 +12,6 @@ export default function useExpand() {
                 setReduce(false)
             }, 500)
         }
-
     }
     return { expand, reduce,toggle }
 }

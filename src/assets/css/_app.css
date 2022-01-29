@@ -13,6 +13,10 @@ html, body, .App, #root, .main {
   -webkit-tap-highlight-color: transparent;
 }
 
+p {
+  margin: 0;
+}
+
 .header {
   width: 100%;
   width: fill-available;
@@ -23,6 +27,15 @@ html, body, .App, #root, .main {
   top: 0;
 }
 
+.background {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+}
+.background canvas {
+  height: 100%;
+}
+
 .grid {
   margin-top: 100px;
   display: grid;
@@ -30,6 +43,7 @@ html, body, .App, #root, .main {
   grid-auto-rows: 350px;
   gap: 2em 2em;
   padding: 2em;
+  grid-auto-flow: dense;
 }
 
 .project-card-wrapper {
@@ -43,10 +57,17 @@ html, body, .App, #root, .main {
 }
 
 .project-card {
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  background: #efefef;
   height: fill-available;
+}
+.project-card .action-zone {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.project-card .action-zone img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
 }
 .project-card .image-wrapper {
   align-items: center;
@@ -90,18 +111,47 @@ html, body, .App, #root, .main {
   height: stretch;
 }
 
+.project-card-wrapper {
+  filter: brightness(80%);
+}
+
 .project-card {
   overflow: hidden;
   opacity: 0;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+.project-card .action-zone {
+  padding: 20px;
+}
+.project-card .title {
+  font-size: 2em;
+  margin: 40px 0;
+  padding: 0 20px;
+  text-shadow: 2px 0 0px rgba(255, 0, 0, 0.7), -2px 0 0px rgba(0, 255, 255, 0.7);
+}
+.project-card .desc {
+  font-size: 1.1em;
+  padding: 0 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.project-card .tags {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 10px 20px;
+  flex: 1;
 }
 
 .grid > .expanded {
   grid-row: span 2;
-  animation: expand 0.5s forwards;
+  animation: expand 0.5s forwards, lighten 0.1s forwards;
 }
 
 .grid > .reduced {
-  animation: reduce 0.5s forwards;
+  animation: reduce 0.5s forwards, darken 0.1s;
   grid-row: span 2;
 }
 
@@ -131,6 +181,22 @@ html, body, .App, #root, .main {
   }
   100% {
     height: min(100vw - 4em, 350px);
+  }
+}
+@keyframes lighten {
+  0% {
+    filter: brightness(80%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+@keyframes darken {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(80%);
   }
 }
 
