@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import Card from './card'
 import projectList from '../../assets/projects/list.json'
 let importAll = r => r.keys().map(r)

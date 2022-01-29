@@ -2,12 +2,10 @@
 
 html, body, .App, #root, .main
     width: 100vw
-    width: fill-available
     width: -moz-available
     width: stretch
 
     height: 100vh
-    height: fill-available
     height: -moz-available
     height: stretch
     margin: 0
@@ -20,10 +18,8 @@ p
 
 .header
     width: 100%
-    width: fill-available
     width: stretch
     height: 100px
-    background: base.$color3
     position: fixed
     top: 0
 
@@ -53,7 +49,7 @@ p
     height: min(calc(100vw - base.$gridGap *2), 350px)
 
 .project-card
-    height: fill-available
+    height: stretch
     .action-zone
         display: flex
         justify-content: space-between
@@ -68,7 +64,7 @@ p
             width: 100%
             height: auto
 
-@media (max-width:1599px)
+@media (max-width:1600px)
     .project-card-wrapper
         grid-column: span 4
 

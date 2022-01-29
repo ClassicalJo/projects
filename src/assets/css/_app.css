@@ -1,10 +1,8 @@
 html, body, .App, #root, .main {
   width: 100vw;
-  width: fill-available;
   width: -moz-available;
   width: stretch;
   height: 100vh;
-  height: fill-available;
   height: -moz-available;
   height: stretch;
   margin: 0;
@@ -19,10 +17,8 @@ p {
 
 .header {
   width: 100%;
-  width: fill-available;
   width: stretch;
   height: 100px;
-  background: #afafaf;
   position: fixed;
   top: 0;
 }
@@ -57,7 +53,7 @@ p {
 }
 
 .project-card {
-  height: fill-available;
+  height: stretch;
 }
 .project-card .action-zone {
   display: flex;
@@ -79,7 +75,7 @@ p {
   height: auto;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1600px) {
   .project-card-wrapper {
     grid-column: span 4;
   }
@@ -105,14 +101,21 @@ p {
   display: flex;
   width: 100%;
   height: 100%;
-  width: fill-available;
-  height: fill-available;
   width: stretch;
   height: stretch;
 }
 
+.header {
+  font-size: 2em;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  text-shadow: 2px 0 0px rgba(255, 0, 0, 0.7), -2px 0 0px rgba(0, 255, 255, 0.7);
+}
+
 .project-card-wrapper {
-  filter: brightness(80%);
+  filter: brightness(90%);
 }
 
 .project-card {
@@ -126,6 +129,10 @@ p {
 }
 .project-card .action-zone {
   padding: 20px;
+}
+.project-card .action-zone img {
+  box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
 }
 .project-card .title {
   font-size: 2em;
@@ -185,7 +192,7 @@ p {
 }
 @keyframes lighten {
   0% {
-    filter: brightness(80%);
+    filter: brightness(90%);
   }
   100% {
     filter: brightness(100%);
@@ -196,7 +203,7 @@ p {
     filter: brightness(100%);
   }
   100% {
-    filter: brightness(80%);
+    filter: brightness(90%);
   }
 }
 
