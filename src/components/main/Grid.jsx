@@ -8,11 +8,12 @@ export default function Grid() {
     let projects = Object.keys(projectList).reverse()
     return (
         <div className="grid">
-            {projects.map((k, i) => <Card key={`card${i}`} 
-            content={projectList[k]}
-            pic={pics[i]} 
-            gif={gifs[i]}
-            time={100 + 100 * i} />)}
+            {projects.map((k, i) => <Card key={`card${i}`}
+                first={i === 0}
+                content={projectList[k]}
+                pic={pics[i]}
+                gif={gifs[i]}
+                time={100 + 100 * i} />)}
         </div>
 
     )

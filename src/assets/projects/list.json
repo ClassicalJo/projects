@@ -43,34 +43,27 @@
         "repo": "https://github.com/ClassicalJo/el-principito"
     },
     "6": {
-        "title": "Secret Hitler",
-        "desc": "An app hosted in Heroku that I use to play Secret Hitler (a board game) with my friends. Node + React with Socket.io to chat and play.",
-        "tags":["finished", "game", "socket.io", "react", "node", "websockets", "responsive", "2021"],
-        "test": "http://powerful-stream-53635.herokuapp.com/",
-        "repo": false
-    },
-    "7": {
         "title": "Blinker13",
         "desc": "A submission for jsk13, a game jam built around developing a full game in only 13kbs, finished 83th of +200 entries.",
         "tags": ["finished","game", "vanillaJS","audio","canvas","physics-engine", "2021" ],
         "test": "https://js13kgames.com/entries/blinker",
         "repo": "https://github.com/ClassicalJo/blinker13"
     },
-    "8": {
+    "7": {
         "title": "Alkemy",
         "desc": "A back-end challenge for Alkemy. App + Api + Authentication + Postgres database. Documented with Postman.",
         "tags": ["finished","node", "API", "REST", "auth0", "authentication", "validation", "postman", "postgres", "2021"],
         "test": false,
         "repo": "https://github.com/ClassicalJo/alkemy-node"
     },
-    "9": {
+    "8": {
         "title": "Pathfinder",
         "desc": "Implementation of the A* pathing algorithm.",
         "tags": ["vanillaJS", "finished", "game", "algorithm", "2021"],
         "test": "https://classicaljo.github.io/pathfinder/",
         "repo": "https://github.com/ClassicalJo/pathfinder"
     },
-    "10": {
+    "9": {
         "title": "Karken",
         "desc": "E-commerce solution I developed for a friend. Postgres, Next, Material-UI. If the dyno is on, it's better through karken.com.ar",
         "tags":["unfinished", "SEO", "next", "postgres", "material-ui", "authentication", "e-commerce", "react", "2022"],

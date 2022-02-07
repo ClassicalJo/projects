@@ -7,9 +7,9 @@ import Tags from "./Tags"
 import useExpand from "./useExpand"
 import Wrapper from "./Wrapper"
 
-export default function Card({ time, content, pic, gif }) {
+export default function Card({ time, content, pic, gif, first }) {
     let [appear, setAppear] = useState('')
-    let { expand, reduce, toggle } = useExpand()
+    let { expand, reduce, toggle } = useExpand(first)
     useEffect(() => {
         let timeout = setTimeout(() => setAppear('appear'), time)
         return () => clearTimeout(timeout)

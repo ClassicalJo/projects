@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default function useExpand() {
-    let [expand, setExpand] = useState(false)
+export default function useExpand(isFirst) {
+    let [expand, setExpand] = useState(isFirst)
     let [reduce, setReduce] = useState(false)
     let toggle = () => {
         if (!expand) setExpand(true)
