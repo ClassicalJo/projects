@@ -69,5 +69,12 @@
         "tags":["unfinished", "SEO", "next", "postgres", "material-ui", "authentication", "e-commerce", "react", "2022"],
         "test": "https://karken.herokuapp.com",
         "repo": false
-    }    
+    },
+    "10": {
+        "title": "Reflections",
+        "desc": "Looking for a performant reflection animation not based in CSS.",
+        "tags":["unfinished", "vanillaJS","canvas", "animation", "2022"],
+        "test": "https://classicaljo.github.io/reflections/",
+        "repo": "https://github.com/ClassicalJo/reflections"
+    }
 }
