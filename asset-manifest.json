@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.c459e950.css",
-    "main.js": "/projects/static/js/main.f59a8772.js",
+    "main.js": "/projects/static/js/main.6ef5f884.js",
     "static/media/07_alkemy.gif": "/projects/static/media/07_alkemy.9ed3ebfd5e88b2e158d8.gif",
     "static/media/06_blinker13.gif": "/projects/static/media/06_blinker13.24fcc1dfa6ed993a8915.gif",
-    "static/media/10_reflections.gif": "/projects/static/media/10_reflections.e09e2acff36fa5f0d0df.gif",
     "static/media/09_karken.gif": "/projects/static/media/09_karken.828a421db9cedf83e12c.gif",
     "static/media/01_barking-board.gif": "/projects/static/media/01_barking-board.6daec6369225195e8755.gif",
     "static/media/03_blinker.gif": "/projects/static/media/03_blinker.ca14a372409d03df4eb0.gif",
     "static/media/02_pokedex.gif": "/projects/static/media/02_pokedex.4e7884338c54ec5278b6.gif",
+    "static/media/10_reflections.gif": "/projects/static/media/10_reflections.0b0d96c2dc3d40a9ad8e.gif",
     "static/media/08_pathfinder.gif": "/projects/static/media/08_pathfinder.9444098c7fa98262ad59.gif",
     "static/media/04_sudoku.gif": "/projects/static/media/04_sudoku.ae294a6b5d9b05e8e7dd.gif",
     "static/media/00_simon-dice.gif": "/projects/static/media/00_simon-dice.b354d9a41a110cc6635f.gif",
     "static/media/09_karken.png": "/projects/static/media/09_karken.3733e232f1836ff59aba.png",
-    "static/media/10_reflections.png": "/projects/static/media/10_reflections.373b8a79d30ee6b9f03f.png",
     "static/media/07_alkemy.png": "/projects/static/media/07_alkemy.8417b090516b0c9acd91.png",
     "static/media/05_el-principito.png": "/projects/static/media/05_el-principito.88d6cf70b22ca63422a3.png",
+    "static/media/10_reflections.png": "/projects/static/media/10_reflections.7179301dd7e6f677760b.png",
     "static/media/02_pokedex.png": "/projects/static/media/02_pokedex.6937861a59cdce330254.png",
     "static/media/04_sudoku.png": "/projects/static/media/04_sudoku.53738fd7fdfa217f192d.png",
     "static/media/08_pathfinder.png": "/projects/static/media/08_pathfinder.926fb5113c77c10e0cc3.png",
@@ -25,10 +25,10 @@
     "static/media/01_barking-board.png": "/projects/static/media/01_barking-board.4b7491c376410d1d0a62.png",
     "index.html": "/projects/index.html",
     "main.c459e950.css.map": "/projects/static/css/main.c459e950.css.map",
-    "main.f59a8772.js.map": "/projects/static/js/main.f59a8772.js.map"
+    "main.6ef5f884.js.map": "/projects/static/js/main.6ef5f884.js.map"
   },
   "entrypoints": [
     "static/css/main.c459e950.css",
-    "static/js/main.f59a8772.js"
+    "static/js/main.6ef5f884.js"
   ]
 }
