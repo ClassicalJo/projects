@@ -1,8 +1,7 @@
 import Card from './card'
 import projectList from '../../assets/projects/list.json'
 let importAll = r => r.keys().map(r)
-let gifs = importAll(require.context('../../assets/projects/gifs', false, /\.(png|jpe?g|gif)$/)).reverse()
-let pics = importAll(require.context('../../assets/projects/pngs', false, /\.(png|jpe?g|gif)$/)).reverse()
+let mp4s = importAll(require.context('../../assets/projects/mp4s')).reverse()
 
 export default function Grid() {
     let projects = Object.keys(projectList).reverse()
@@ -11,8 +10,7 @@ export default function Grid() {
             {projects.map((k, i) => <Card key={`card${i}`}
                 first={i === 0}
                 content={projectList[k]}
-                pic={pics[i]}
-                gif={gifs[i]}
+                mp4={mp4s[i]}
                 time={100 + 100 * i} />)}
         </div>
 

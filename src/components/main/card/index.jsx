@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react"
 import ActionZone from "./ActionZone"
-import Image from "./Image"
+import Image from "./Demo"
 import gh from '../../../assets/github.png'
 import play from '../../../assets/play.png'
 import Tags from "./Tags"
 import useExpand from "./useExpand"
 import Wrapper from "./Wrapper"
 
-export default function Card({ time, content, pic, gif, first }) {
+export default function Card({ time, content, mp4, first }) {
     let [appear, setAppear] = useState('')
     let { expand, reduce, toggle } = useExpand(first)
     useEffect(() => {
         let timeout = setTimeout(() => setAppear('appear'), time)
         return () => clearTimeout(timeout)
-    }, [])
+    }, [time])
 
     let { title, desc, tags, test, repo } = content
-    let imageProps = { pic, gif, expand }
+    let imageProps = { mp4, expand }
     let wrapperProps = { toggle, expand, reduce }
     let actionProps = { repo, test, gh, play }
 

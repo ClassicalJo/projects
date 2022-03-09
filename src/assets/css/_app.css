@@ -65,12 +65,12 @@ p {
   height: 50px;
   opacity: 0.8;
 }
-.project-card .image-wrapper {
+.project-card .demo-wrapper {
   align-items: center;
   justify-content: center;
   display: flex;
 }
-.project-card .image-wrapper > img {
+.project-card .demo-wrapper > video {
   width: 100%;
   height: auto;
 }

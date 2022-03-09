@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
 import WebFont from "webfontloader";
-import Grid from "../main/Grid";
 import Main from '../main/Main'
-import Header from "../header/Header";
 
+let importAll = r => r.keys().map(r)
+const mp4s = importAll(require.context('../../assets/projects/mp4s'))
 
-export default function Loader({ element }) {
+export default function Loader() {
     let [ready, setReady] = useState(false)
     let [done, setDone] = useState(false)
     useEffect(() => {
@@ -16,8 +16,21 @@ export default function Loader({ element }) {
             },
             active: () => setReady(true)
         })
-        let timeout = setTimeout(() => setDone(true), 500)
-        return () => clearTimeout(timeout)
+        // console.log(something.active)
+        async function preloadImages() {
+            let promisedVideos = mp4s.map((k) => new Promise(resolve => {
+                let video = document.createElement('video')
+                video.src = k
+                video.onloadeddata = function () {
+                    resolve(this)
+                }
+
+            }))
+            Promise.all(promisedVideos).then(() => setDone(true))
+        }
+        preloadImages()
+
+
     }, [])
     switch (ready && done) {
         case true: return (
@@ -26,6 +39,6 @@ export default function Loader({ element }) {
             </>
         );
         default: return <Loading />
-        
+
     }
 }
