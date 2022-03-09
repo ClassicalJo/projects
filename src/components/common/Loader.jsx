@@ -16,7 +16,6 @@ export default function Loader() {
             },
             active: () => setReady(true)
         })
-        // console.log(something.active)
         async function preloadImages() {
             let promisedVideos = mp4s.map((k) => new Promise(resolve => {
                 let video = document.createElement('video')
@@ -24,9 +23,11 @@ export default function Loader() {
                 video.onloadeddata = function () {
                     resolve(this)
                 }
-
             }))
-            Promise.all(promisedVideos).then(() => setDone(true))
+
+            let promisedTime = new Promise(resolve => setTimeout(() => resolve(this), 500))
+            Promise.all([...promisedVideos, promisedTime]).then(() => setDone(true))
+
         }
         preloadImages()
 
@@ -39,6 +40,5 @@ export default function Loader() {
             </>
         );
         default: return <Loading />
-
     }
 }
