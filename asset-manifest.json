@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.55839699.css",
-    "main.js": "/projects/static/js/main.159964be.js",
+    "main.js": "/projects/static/js/main.9ee0cb15.js",
     "static/media/07_alkemy.mp4": "/projects/static/media/07_alkemy.173aef3a207c4b400869.mp4",
     "static/media/02_pokedex.mp4": "/projects/static/media/02_pokedex.4f47f5af46080738a814.mp4",
     "static/media/06_blinker13.mp4": "/projects/static/media/06_blinker13.20a9fe7d102e90f8a7c8.mp4",
@@ -15,10 +15,10 @@
     "static/media/05_el-principito.mp4": "/projects/static/media/05_el-principito.8df670ed9d79538d7a69.mp4",
     "index.html": "/projects/index.html",
     "main.55839699.css.map": "/projects/static/css/main.55839699.css.map",
-    "main.159964be.js.map": "/projects/static/js/main.159964be.js.map"
+    "main.9ee0cb15.js.map": "/projects/static/js/main.9ee0cb15.js.map"
   },
   "entrypoints": [
     "static/css/main.55839699.css",
-    "static/js/main.159964be.js"
+    "static/js/main.9ee0cb15.js"
   ]
 }
