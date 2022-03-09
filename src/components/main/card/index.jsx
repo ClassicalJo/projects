@@ -7,7 +7,7 @@ import Tags from "./Tags"
 import useExpand from "./useExpand"
 import Wrapper from "./Wrapper"
 
-export default function Card({ time, content, mp4, first }) {
+export default function Card({ time, content, webm, first }) {
     let [appear, setAppear] = useState('')
     let { expand, reduce, toggle } = useExpand(first)
     useEffect(() => {
@@ -16,7 +16,7 @@ export default function Card({ time, content, mp4, first }) {
     }, [time])
 
     let { title, desc, tags, test, repo } = content
-    let imageProps = { mp4, expand }
+    let imageProps = { webm, expand }
     let wrapperProps = { toggle, expand, reduce }
     let actionProps = { repo, test, gh, play }
 

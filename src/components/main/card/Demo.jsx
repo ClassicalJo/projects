@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-export default function Demo({ expand, mp4 }) {
+export default function Demo({ expand, webm }) {
     let ref = useRef()
     useEffect(() => {
         let video = ref.current
@@ -9,7 +9,7 @@ export default function Demo({ expand, mp4 }) {
     }, [expand])
     return (
         <div className="demo-wrapper">
-            <video ref={ref} src={mp4} loop muted autoPlay />
+            <video ref={ref} src={webm} loop muted autoPlay={true} />
         </div>
     )
 }

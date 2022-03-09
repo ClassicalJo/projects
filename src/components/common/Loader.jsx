@@ -4,7 +4,7 @@ import WebFont from "webfontloader";
 import Main from '../main/Main'
 
 let importAll = r => r.keys().map(r)
-const mp4s = importAll(require.context('../../assets/projects/mp4s'))
+const webms = importAll(require.context('../../assets/projects/webms'))
 
 export default function Loader() {
     let [ready, setReady] = useState(false)
@@ -16,24 +16,8 @@ export default function Loader() {
             },
             active: () => setReady(true)
         })
-        async function preloadImages() {
-            let promisedVideos = mp4s.map((k) => new Promise(resolve => {
-                let video = document.createElement('video')
-                video.src = k
-                video.onloadeddata = function () {
-                    resolve(this)
-                }
-            }))
-
-            let promisedTime = new Promise(resolve => setTimeout(() => resolve(this), 500))
-            Promise.all([...promisedVideos, promisedTime]).then(() => setDone(true))
-
-        }
-        preloadImages()
-
-
     }, [])
-    switch (ready && done) {
+    switch (ready) {
         case true: return (
             <>
                 <Main></Main>
