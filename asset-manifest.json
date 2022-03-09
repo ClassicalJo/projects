@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.55839699.css",
-    "main.js": "/projects/static/js/main.9ee0cb15.js",
-    "static/media/07_alkemy.mp4": "/projects/static/media/07_alkemy.173aef3a207c4b400869.mp4",
-    "static/media/02_pokedex.mp4": "/projects/static/media/02_pokedex.4f47f5af46080738a814.mp4",
-    "static/media/06_blinker13.mp4": "/projects/static/media/06_blinker13.20a9fe7d102e90f8a7c8.mp4",
-    "static/media/09_karken.mp4": "/projects/static/media/09_karken.10b5852ebced07598b8e.mp4",
-    "static/media/01_barking-board.mp4": "/projects/static/media/01_barking-board.2229a30b993b6e6c390c.mp4",
-    "static/media/03_blinker.mp4": "/projects/static/media/03_blinker.30c2d97b69017d287dbb.mp4",
-    "static/media/04_sudoku.mp4": "/projects/static/media/04_sudoku.f5b6151fc16113f0bfe7.mp4",
-    "static/media/08_pathfinder.mp4": "/projects/static/media/08_pathfinder.79896da810e5dc150597.mp4",
-    "static/media/10_reflections.mp4": "/projects/static/media/10_reflections.bcf05487925d323fe569.mp4",
-    "static/media/00_simon-dice.mp4": "/projects/static/media/00_simon-dice.61a42348cdb7384ad6e0.mp4",
-    "static/media/05_el-principito.mp4": "/projects/static/media/05_el-principito.8df670ed9d79538d7a69.mp4",
+    "main.js": "/projects/static/js/main.92492d09.js",
+    "static/media/02_pokedex.webm": "/projects/static/media/02_pokedex.fd296c7c0f27321e3c67.webm",
+    "static/media/07_alkemy.webm": "/projects/static/media/07_alkemy.37cc443f240f17f90d4d.webm",
+    "static/media/09_karken.webm": "/projects/static/media/09_karken.30f29447b5983f583026.webm",
+    "static/media/01_barking-board.webm": "/projects/static/media/01_barking-board.d95c81adc45c655195e9.webm",
+    "static/media/06_blinker13.webm": "/projects/static/media/06_blinker13.1446eff7b373ce9f531f.webm",
+    "static/media/03_blinker.webm": "/projects/static/media/03_blinker.c75287a7f88f588f8738.webm",
+    "static/media/04_sudoku.webm": "/projects/static/media/04_sudoku.0205ee95c3937293f3f3.webm",
+    "static/media/08_pathfinder.webm": "/projects/static/media/08_pathfinder.436c56f870242c17de3f.webm",
+    "static/media/10_reflections.webm": "/projects/static/media/10_reflections.e00da2e6230f79ec4cb4.webm",
+    "static/media/00_simon-dice.webm": "/projects/static/media/00_simon-dice.3a7aa0591ffb71d3c297.webm",
+    "static/media/05_el-principito.webm": "/projects/static/media/05_el-principito.266e339e433e045f5353.webm",
     "index.html": "/projects/index.html",
     "main.55839699.css.map": "/projects/static/css/main.55839699.css.map",
-    "main.9ee0cb15.js.map": "/projects/static/js/main.9ee0cb15.js.map"
+    "main.92492d09.js.map": "/projects/static/js/main.92492d09.js.map"
   },
   "entrypoints": [
     "static/css/main.55839699.css",
-    "static/js/main.9ee0cb15.js"
+    "static/js/main.92492d09.js"
   ]
 }
